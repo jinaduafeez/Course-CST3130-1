@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta htto-equlv="X-UA-compatable" content="Enter your description here"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Document</title>
+    <style>
+        td>img {
+            width: 100%;
+            height: 250px;
+            object-fit: contain;
+            
+        }
+    </style>
+
+    
+</head>
+<body>
+    <h1 class="display-5 my-5 text center">Compare page in js</h1>
+    <div class="container">
+        <div class="col-md-9 mx-auto">
+            
+    <table class="table">
+        
+
+        <tr class="bg-light">
+            
+                
+            <th>Select product</th>
+            <th>
+                <select class="form-control" id="select">
+                    <option value="0">---Select 1--</option>
+                    
+                </select>
+            </th>
+            <th>
+                <select class="form-control" id="select">
+                    <option value="0">---Select 2--</option>
+                </select>
+            </th>
+        </tr>
+        <th>Product image</th>
+        <td>
+
+            <tr>
+                <th>Product price</th>
+                <td id="price 1">120</td>
+                <td id="price2">170</td>
+            </tr>
+
+            <tr>
+                <th>Product description</th>
+                <th id="desc1">200</th>
+                <td id="price1">300</td>
+            </tr>
+
+            <tr>
+                <th>Product Brand</th>
+                <td>1150</td>
+                <td>100</td>
+            </tr>
+            <img src="https://pngtree.com/freepng/whatsapp-icon-whatsapp-logo_3584844.html" alt="">
+        </td>
+        <td>
+            <img src="https://pngtree.com/freepng/whatsapp-icon-whatsapp-logo_3584844.html" alt="">
+        </td>
+
+
+
+
+
+
+    </table>
+
+        </div>
+    </div>
+
+    
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/js/bootstrap.min.js"></script>
+    <script src=""></script>
+    
+</body>
+</html>
+
+<script src="data.js"></script>
+<script>
+    for(var i = 1; i <product.lenght; i++) {
+        document.getElementById("select1").innerHTML+= `
+        <option value="${i}">${product[i].title}</option>`;
+
+            document.getElementById("select2").innerHTML +=`
+            <option value="${i}">${product[i].title}</option>`;
+    }
+
+    function item1(a) {
+        var select2 = document.getElementById("select2").value
+        if(a !=select) {
+            document.getElementById("image1").src = product[a].image
+            document.getElementById("price1").innerHTML ="PKR" +product[a].price
+            document.getElementById("desc1").innerHTML = product[a].description
+            document.getElementById("brand1").innerHTML.product[a].brand
+            
+
+        } else {
+            document.getElementById("select1").selectedlndex = 0;
+            document.getElementById("img1").src = product[0].image
+            document.getElementById("price 1").innerHTML = ""
+            document.getElementById("desc1").innerHTML = ""
+            document.getElementById("brand1").innerHTML = ""
+        }
+    }
+
+    function item1(a) {
+        var select2 = document.getElementById("select2").value
+        if(a !=select) {
+            document.getElementById("image1").src = product[a].image
+            document.getElementById("price1").innerHTML ="PKR" +product[a].price
+            document.getElementById("desc1").innerHTML = product[a].description
+            document.getElementById("brand1").innerHTML.product[a].brand
+            
+
+        } else {
+            document.getElementById("select1").selectedlndex = 0;
+            document.getElementById("img1").src = product[0].image
+            document.getElementById("price 1").innerHTML = ""
+            document.getElementById("desc1").innerHTML = ""
+            document.getElementById("brand1").innerHTML = ""
+        }
+    }
+
+    
+</script>
